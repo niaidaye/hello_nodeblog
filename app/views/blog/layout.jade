@@ -1,0 +1,107 @@
+extends ../layout
+block main
+  block header
+    .blog-masthead
+      .container
+        nav.nav
+          a.nav-link.active(href='#') 首页
+          a.nav-link(href='#') 关于我们
+          a.nav-link(href='#') 新闻中心
+          a.nav-link(href='#') 产品服务
+          a.nav-link(href='#') 联系我们
+    .blog-header
+      .container
+
+
+        h1.blog-title 科技 创新 实践
+        p.lead.blog-description 一次偶然的成功，比一次必然的失败更可怕。
+
+
+
+  block main1
+    .container(role='main')
+      .row
+        .col-sm-8.blog-main
+          .blog-post
+            img(src='img/index.jpg')
+            h2.blog-post-title Sample blog post
+            p.blog-post-meta
+              | January 1, 2014 by
+              a(href='#') Mark
+            p
+              | This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.
+            hr
+            p
+              | Cum sociis natoque penatibus et magnis
+              a(href='#') dis parturient montes
+              | , nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+            blockquote
+              p
+                | Curabitur blandit tempus porttitor.
+                strong Nullam quis risus eget urna mollis
+                |  ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            p
+              | Etiam porta
+              em sem malesuada magna
+              |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+          // /.blog
+          nav.blog-pagination
+            a.btn.btn-outline-primary(href='#') Older
+            a.btn.btn-outline-secondary.disabled(href='#') Newer
+        aside.col-sm-3.ml-sm-auto.blog-sidebar
+          .sidebar-module.sidebar-module-inset
+            h4 About
+            p
+              | Etiam porta
+              em sem malesuada magna
+              |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+          .sidebar-module
+            h4 Archives
+            ol.list-unstyled
+              li
+                a(href='#') March 2014
+              li
+                a(href='#') February 2014
+              li
+                a(href='#') January 2014
+              li
+                a(href='#') December 2013
+              li
+                a(href='#') November 2013
+              li
+                a(href='#') October 2013
+              li
+                a(href='#') September 2013
+              li
+                a(href='#') August 2013
+              li
+                a(href='#') July 2013
+              li
+                a(href='#') June 2013
+              li
+                a(href='#') May 2013
+              li
+                a(href='#') April 2013
+          .sidebar-module
+            h4 Elsewhere
+            ol.list-unstyled
+              li
+                a(href='#') GitHub
+              li
+                a(href='#') Twitter
+              li
+                a(href='#') Facebook
+
+
+  block footer
+    footer.blog-footer
+      p
+        | Blog template built for
+        a(href='https://getbootstrap.com/') Bootstrap
+        |  by
+        a(href='https://twitter.com/mdo') @mdo
+        | .
+      p
+        a(href='#') Back to top
+append css
+    link(rel='stylesheet', href='/css/blog.css')

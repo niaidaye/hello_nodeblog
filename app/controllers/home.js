@@ -10,8 +10,8 @@ module.exports = function (app) {
 router.get('/', function (req, res, next) {
   Article.find(function (err, articles) {
     if (err) return next(err);
-    res.render('index', {
-      title: 'Generator-Express MVC',
+    res.render('blog/index', {
+      title: '荣知通科技',
       articles: articles,
       pretty: true
     });
